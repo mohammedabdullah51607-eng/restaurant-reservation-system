@@ -1,0 +1,232 @@
+/* ==========================================
+   Paradise Biryani
+   Glassmorphism Navbar
+========================================== */
+
+.navbar{
+
+position:sticky;
+
+top:18px;
+
+margin:18px auto;
+
+width:95%;
+
+max-width:1450px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:18px 35px;
+
+background:rgba(255,255,255,.06);
+
+backdrop-filter:blur(20px);
+
+-webkit-backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:22px;
+
+box-shadow:
+
+0 10px 35px rgba(0,0,0,.35);
+
+z-index:1000;
+
+transition:.35s;
+
+}
+
+.navbar:hover{
+
+box-shadow:
+
+0 15px 45px rgba(0,0,0,.45);
+
+}
+
+/* ================= Logo ================= */
+
+.logo{
+
+font-size:28px;
+
+font-weight:700;
+
+letter-spacing:.5px;
+
+background:
+
+linear-gradient(
+
+90deg,
+
+#ffffff,
+
+#60A5FA,
+
+#F59E0B
+
+);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+cursor:pointer;
+
+user-select:none;
+
+}
+
+/* ================= Menu ================= */
+
+.nav-links{
+
+display:flex;
+
+align-items:center;
+
+gap:14px;
+
+list-style:none;
+
+}
+
+.nav-links li{
+
+list-style:none;
+
+}
+
+/* ================= Links ================= */
+
+.nav-links a{
+
+display:block;
+
+padding:12px 18px;
+
+border-radius:14px;
+
+text-decoration:none;
+
+font-size:15px;
+
+font-weight:600;
+
+color:#E4E4E7;
+
+transition:.30s;
+
+}
+
+.nav-links a:hover{
+
+background:rgba(59,130,246,.18);
+
+color:#ffffff;
+
+transform:translateY(-2px);
+
+}
+
+/* ================= Logout ================= */
+
+.logout-btn{
+
+padding:12px 22px;
+
+border:none;
+
+border-radius:14px;
+
+cursor:pointer;
+
+font-size:15px;
+
+font-weight:600;
+
+color:white;
+
+background:
+
+linear-gradient(
+
+135deg,
+
+#DC2626,
+
+#EF4444
+
+);
+
+transition:.35s;
+
+box-shadow:
+
+0 8px 25px rgba(239,68,68,.35);
+
+}
+
+.logout-btn:hover{
+
+transform:translateY(-3px);
+
+box-shadow:
+
+0 15px 35px rgba(239,68,68,.55);
+
+}
+
+/* ================= Mobile ================= */
+
+@media(max-width:900px){
+
+.navbar{
+
+flex-direction:column;
+
+gap:20px;
+
+padding:25px;
+
+}
+
+.logo{
+
+font-size:24px;
+
+}
+
+.nav-links{
+
+width:100%;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:10px;
+
+}
+
+.nav-links a{
+
+padding:10px 15px;
+
+}
+
+.logout-btn{
+
+width:100%;
+
+}
+
+}

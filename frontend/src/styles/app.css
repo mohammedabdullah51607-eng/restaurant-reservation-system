@@ -1,0 +1,1363 @@
+/* ==========================================================
+   Paradise Biryani
+   Premium Glassmorphism Theme
+   Version 2.0
+========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+
+/* ========= Background ========= */
+
+--background:#0A0E17;
+--background2:#111827;
+--background3:#172033;
+
+/* ========= Glass ========= */
+
+--glass:rgba(255,255,255,.08);
+
+--glassHover:rgba(255,255,255,.12);
+
+--glassBorder:rgba(255,255,255,.10);
+
+/* ========= Brand ========= */
+
+--primary:#4F8CFF;
+
+--primaryHover:#6AA5FF;
+
+--gold:#FFB84D;
+
+--green:#34D399;
+
+--red:#F87171;
+
+/* ========= Text ========= */
+
+--white:#FFFFFF;
+
+--text:#F8FAFC;
+
+--textLight:#CBD5E1;
+
+--muted:#94A3B8;
+
+/* ========= Effects ========= */
+
+--shadow:
+
+0 20px 45px rgba(0,0,0,.35);
+
+--radius:24px;
+
+--transition:.35s;
+
+}
+
+/* ===================================================== */
+
+*{
+
+margin:0;
+
+padding:0;
+
+box-sizing:border-box;
+
+font-family:"Inter",sans-serif;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+body{
+
+background:
+
+radial-gradient(circle at top left,#1E3A8A20,transparent 30%),
+
+radial-gradient(circle at bottom right,#F59E0B18,transparent 25%),
+
+linear-gradient(
+
+135deg,
+
+#07090F,
+
+#0F172A,
+
+#111827,
+
+#1E293B
+
+);
+
+color:var(--text);
+
+min-height:100vh;
+
+overflow-x:hidden;
+
+}
+
+/* ===================================================== */
+
+a{
+
+text-decoration:none;
+
+color:inherit;
+
+}
+
+button{
+
+font-family:inherit;
+
+}
+
+img{
+
+max-width:100%;
+
+display:block;
+
+}
+
+/* ===================================================== */
+
+.container{
+
+width:92%;
+
+max-width:1350px;
+
+margin:auto;
+
+padding:40px 0;
+
+}
+
+/* =====================================================
+Typography
+===================================================== */
+
+h1{
+
+font-size:58px;
+
+font-weight:800;
+
+line-height:1.15;
+
+color:white;
+
+}
+
+h2{
+
+font-size:42px;
+
+font-weight:700;
+
+color:white;
+
+}
+
+h3{
+
+font-size:24px;
+
+font-weight:600;
+
+color:white;
+
+}
+
+h4{
+
+font-size:20px;
+
+font-weight:600;
+
+color:white;
+
+}
+
+p{
+
+font-size:17px;
+
+line-height:1.8;
+
+color:var(--textLight);
+
+}
+
+small{
+
+color:var(--muted);
+
+}
+
+/* =====================================================
+Gradient Text
+===================================================== */
+
+.gradient{
+
+background:
+
+linear-gradient(
+
+90deg,
+
+#FFFFFF,
+
+#60A5FA,
+
+#FFB84D
+
+);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+background-clip:text;
+
+}
+
+/* =====================================================
+Hero Section
+===================================================== */
+
+.hero{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+padding:120px 20px 80px;
+
+}
+
+.hero h1{
+
+max-width:900px;
+
+margin-bottom:25px;
+
+}
+
+.hero p{
+
+max-width:760px;
+
+font-size:21px;
+
+margin-bottom:45px;
+
+}
+
+/* =====================================================
+Glass Card
+===================================================== */
+
+.card{
+
+background:var(--glass);
+
+border:1px solid var(--glassBorder);
+
+backdrop-filter:blur(22px);
+
+-webkit-backdrop-filter:blur(22px);
+
+border-radius:var(--radius);
+
+box-shadow:var(--shadow);
+
+padding:30px;
+
+transition:var(--transition);
+
+}
+
+.card:hover{
+
+background:var(--glassHover);
+
+transform:translateY(-8px);
+
+}
+/* =====================================================
+Buttons
+===================================================== */
+
+.heroBtn,
+.primary-btn{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+gap:10px;
+
+padding:16px 38px;
+
+border:none;
+
+border-radius:16px;
+
+cursor:pointer;
+
+font-size:16px;
+
+font-weight:700;
+
+letter-spacing:.3px;
+
+color:white;
+
+background:
+
+linear-gradient(
+135deg,
+#3B82F6,
+#2563EB);
+
+box-shadow:
+
+0 12px 35px rgba(37,99,235,.45);
+
+transition:all .35s ease;
+
+}
+
+.heroBtn:hover,
+.primary-btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:
+
+0 20px 45px rgba(59,130,246,.55);
+
+}
+
+.heroBtn:active,
+.primary-btn:active{
+
+transform:scale(.98);
+
+}
+
+/* ================= Danger Button ================= */
+
+.cancel-btn{
+
+width:100%;
+
+padding:15px;
+
+border:none;
+
+border-radius:16px;
+
+cursor:pointer;
+
+font-size:15px;
+
+font-weight:700;
+
+color:white;
+
+background:
+
+linear-gradient(
+135deg,
+#EF4444,
+#DC2626);
+
+box-shadow:
+
+0 10px 28px rgba(239,68,68,.35);
+
+transition:.35s;
+
+margin-top:20px;
+
+}
+
+.cancel-btn:hover{
+
+transform:translateY(-4px);
+
+box-shadow:
+
+0 18px 38px rgba(239,68,68,.5);
+
+}
+
+/* =====================================================
+Forms
+===================================================== */
+
+form{
+
+max-width:550px;
+
+margin:40px auto;
+
+padding:35px;
+
+background:var(--glass);
+
+border:1px solid var(--glassBorder);
+
+backdrop-filter:blur(20px);
+
+border-radius:28px;
+
+box-shadow:var(--shadow);
+
+}
+
+form h2{
+
+text-align:center;
+
+margin-bottom:25px;
+
+}
+
+label{
+
+display:block;
+
+margin-bottom:8px;
+
+font-weight:600;
+
+color:#E2E8F0;
+
+}
+
+/* =====================================================
+Inputs
+===================================================== */
+
+input,
+select,
+textarea{
+
+width:100%;
+
+padding:16px;
+
+margin-bottom:22px;
+
+background:
+
+rgba(255,255,255,.06);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:16px;
+
+outline:none;
+
+font-size:16px;
+
+color:white;
+
+transition:.3s;
+
+}
+
+input::placeholder,
+textarea::placeholder{
+
+color:#94A3B8;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+
+border-color:#3B82F6;
+
+background:
+
+rgba(255,255,255,.09);
+
+box-shadow:
+
+0 0 0 4px rgba(59,130,246,.15);
+
+}
+
+/* =====================================================
+Reservation Page
+===================================================== */
+
+.reservation-page{
+
+width:92%;
+
+max-width:1450px;
+
+margin:auto;
+
+padding:50px 0;
+
+}
+
+.page-title{
+
+font-size:44px;
+
+text-align:center;
+
+margin-bottom:50px;
+
+color:white;
+
+}
+
+/* =====================================================
+Reservation Grid
+===================================================== */
+
+.reservation-grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(360px,1fr));
+
+gap:30px;
+
+}
+
+/* =====================================================
+Reservation Card
+===================================================== */
+
+.reservation-card{
+
+background:var(--glass);
+
+border:1px solid var(--glassBorder);
+
+backdrop-filter:blur(20px);
+
+border-radius:24px;
+
+padding:28px;
+
+box-shadow:var(--shadow);
+
+transition:.35s;
+
+}
+
+.reservation-card:hover{
+
+transform:translateY(-8px);
+
+background:var(--glassHover);
+
+}
+
+.reservation-card h2{
+
+margin-bottom:18px;
+
+font-size:26px;
+
+color:var(--gold);
+
+}
+
+.reservation-card p{
+
+margin:14px 0;
+
+font-size:16px;
+
+color:#E2E8F0;
+
+}
+
+/* =====================================================
+Status Badge
+===================================================== */
+
+.badge{
+
+display:inline-block;
+
+padding:8px 18px;
+
+border-radius:40px;
+
+font-weight:700;
+
+font-size:14px;
+
+color:white;
+
+}
+
+.booked{
+
+background:
+
+linear-gradient(
+135deg,
+#10B981,
+#22C55E);
+
+}
+
+.cancelled{
+
+background:
+
+linear-gradient(
+135deg,
+#EF4444,
+#DC2626);
+
+}
+/* =====================================================
+   Admin Dashboard
+===================================================== */
+
+.admin-container{
+
+width:92%;
+
+max-width:1450px;
+
+margin:auto;
+
+padding:50px 0;
+
+}
+
+.admin-title{
+
+text-align:center;
+
+font-size:48px;
+
+font-weight:800;
+
+margin-bottom:45px;
+
+color:#FFFFFF;
+
+}
+
+/* =====================================================
+Statistics Cards
+===================================================== */
+
+.stats{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+margin-bottom:60px;
+
+}
+
+.stats .card{
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+padding:35px;
+
+min-height:170px;
+
+background:rgba(255,255,255,.08);
+
+border:1px solid rgba(255,255,255,.12);
+
+}
+
+.stats .card h3{
+
+font-size:18px;
+
+color:#CBD5E1;
+
+margin-bottom:12px;
+
+}
+
+.stats .card h2{
+
+font-size:44px;
+
+font-weight:800;
+
+color:#FFFFFF;
+
+}
+
+.stats .booked{
+
+border-left:6px solid #22C55E;
+
+}
+
+.stats .cancelled{
+
+border-left:6px solid #EF4444;
+
+}
+
+/* =====================================================
+Table
+===================================================== */
+
+.reservation-table{
+
+width:100%;
+
+border-collapse:collapse;
+
+overflow:hidden;
+
+border-radius:22px;
+
+background:rgba(255,255,255,.07);
+
+backdrop-filter:blur(20px);
+
+box-shadow:
+
+0 20px 40px rgba(0,0,0,.30);
+
+}
+
+.reservation-table thead{
+
+background:
+
+linear-gradient(
+
+90deg,
+
+#2563EB,
+
+#1D4ED8
+
+);
+
+}
+
+.reservation-table th{
+
+padding:20px;
+
+font-size:15px;
+
+font-weight:700;
+
+color:white;
+
+letter-spacing:.5px;
+
+}
+
+.reservation-table td{
+
+padding:18px;
+
+font-size:15px;
+
+color:#F1F5F9;
+
+border-bottom:
+
+1px solid rgba(255,255,255,.06);
+
+}
+
+.reservation-table tbody tr{
+
+transition:.3s;
+
+}
+
+.reservation-table tbody tr:hover{
+
+background:rgba(255,255,255,.05);
+
+}
+
+/* =====================================================
+Status Badge
+===================================================== */
+
+.status{
+
+display:inline-flex;
+
+align-items:center;
+
+justify-content:center;
+
+padding:8px 18px;
+
+border-radius:30px;
+
+font-weight:700;
+
+font-size:13px;
+
+color:white;
+
+}
+
+.bookedStatus{
+
+background:
+
+linear-gradient(
+135deg,
+#10B981,
+#22C55E);
+
+}
+
+.cancelledStatus{
+
+background:
+
+linear-gradient(
+135deg,
+#EF4444,
+#DC2626);
+
+}
+
+/* =====================================================
+Search Box
+===================================================== */
+
+.search-box{
+
+width:100%;
+
+max-width:420px;
+
+margin:0 auto 35px;
+
+display:block;
+
+}
+
+/* =====================================================
+Section Title
+===================================================== */
+
+.section-title{
+
+font-size:34px;
+
+font-weight:700;
+
+margin-bottom:30px;
+
+color:white;
+
+}
+
+/* =====================================================
+Empty State
+===================================================== */
+
+.empty{
+
+text-align:center;
+
+padding:60px;
+
+color:#94A3B8;
+
+font-size:18px;
+
+}
+
+/* =====================================================
+Scrollbar
+===================================================== */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+height:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#0F172A;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#3B82F6;
+
+border-radius:50px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+background:#60A5FA;
+
+}
+
+/* =====================================================
+Animations
+===================================================== */
+
+.card,
+.reservation-card,
+.reservation-table,
+form{
+
+animation:fadeUp .7s ease;
+
+}
+
+@keyframes fadeUp{
+
+0%{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+100%{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+@keyframes pulseGlow{
+
+0%{
+
+box-shadow:
+
+0 0 0 rgba(59,130,246,0);
+
+}
+
+50%{
+
+box-shadow:
+
+0 0 30px rgba(59,130,246,.35);
+
+}
+
+100%{
+
+box-shadow:
+
+0 0 0 rgba(59,130,246,0);
+
+}
+
+}
+
+.primary-btn:hover{
+
+animation:pulseGlow 1.2s infinite;
+
+}
+/* =====================================================
+   Footer
+===================================================== */
+
+.footer{
+
+margin-top:100px;
+
+padding:50px 20px;
+
+text-align:center;
+
+background:rgba(255,255,255,.04);
+
+backdrop-filter:blur(18px);
+
+border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+.footer h2{
+
+font-size:32px;
+
+margin-bottom:20px;
+
+color:#FFFFFF;
+
+}
+
+.footer p{
+
+color:#CBD5E1;
+
+margin:10px 0;
+
+}
+
+.footer-links{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+margin-top:25px;
+
+flex-wrap:wrap;
+
+}
+
+.footer-links a{
+
+color:#CBD5E1;
+
+transition:.3s;
+
+}
+
+.footer-links a:hover{
+
+color:#60A5FA;
+
+}
+
+/* =====================================================
+   Utility Classes
+===================================================== */
+
+.text-center{
+
+text-align:center;
+
+}
+
+.mt-1{margin-top:10px;}
+.mt-2{margin-top:20px;}
+.mt-3{margin-top:30px;}
+.mt-4{margin-top:40px;}
+.mt-5{margin-top:60px;}
+
+.mb-1{margin-bottom:10px;}
+.mb-2{margin-bottom:20px;}
+.mb-3{margin-bottom:30px;}
+.mb-4{margin-bottom:40px;}
+.mb-5{margin-bottom:60px;}
+
+.flex{
+
+display:flex;
+
+}
+
+.flex-center{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+}
+
+.space-between{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+}
+
+.grid-2{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:30px;
+
+}
+
+.grid-3{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap:30px;
+
+}
+
+.grid-4{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:30px;
+
+}
+
+/* =====================================================
+   Smooth Page Animation
+===================================================== */
+
+.page{
+
+animation:pageFade .6s ease;
+
+}
+
+@keyframes pageFade{
+
+from{
+
+opacity:0;
+
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+/* =====================================================
+   Card Glow
+===================================================== */
+
+.card:hover,
+.reservation-card:hover{
+
+border-color:rgba(96,165,250,.35);
+
+box-shadow:
+
+0 20px 45px rgba(0,0,0,.45),
+
+0 0 30px rgba(59,130,246,.15);
+
+}
+
+/* =====================================================
+   Responsive
+===================================================== */
+
+@media(max-width:1100px){
+
+.grid-4{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.grid-3{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.container{
+
+width:95%;
+
+}
+
+.hero{
+
+padding:80px 20px;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.grid-2,
+.grid-3,
+.grid-4{
+
+grid-template-columns:1fr;
+
+}
+
+.stats{
+
+grid-template-columns:1fr;
+
+}
+
+.reservation-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.reservation-table{
+
+display:block;
+
+overflow-x:auto;
+
+white-space:nowrap;
+
+}
+
+.admin-title{
+
+font-size:34px;
+
+}
+
+.page-title{
+
+font-size:34px;
+
+}
+
+form{
+
+padding:25px;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.heroBtn,
+.primary-btn{
+
+width:100%;
+
+}
+
+.cancel-btn{
+
+width:100%;
+
+}
+
+.logo{
+
+font-size:22px;
+
+}
+
+}
+
+/* =====================================================
+   Selection
+===================================================== */
+
+::selection{
+
+background:#3B82F6;
+
+color:white;
+
+}
+
+/* =====================================================
+   Autofill Fix
+===================================================== */
+
+input:-webkit-autofill{
+
+-webkit-box-shadow:0 0 0 1000px rgba(255,255,255,.06) inset;
+
+-webkit-text-fill-color:white;
+
+transition:background-color 9999s;
+
+}
